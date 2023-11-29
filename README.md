@@ -21,5 +21,5 @@ Requirmenet :
 5. Quotes 
 6. 
 
-  Concept Des
+  Concept Design plan
 
