@@ -7,36 +7,36 @@
         <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <nav>
+        <nav id="navbar">
             <header>HTML and CSS Intro Technical Documentation</header>
             <ul>
                 <!-- Nav bar for each item-->
                 <!-- linked to each section article -->
                 <li>
-                    <a href="#introduction">Introduction</a>
+                    <a class="navlink" href="#introduction">Introduction</a>
                 </li>
                 <li>
-                    <a href="#terms">Terms</a>
+                    <a class="navlink" href="#terms">Terms</a>
                 </li>
                 <li>
-                    <a href="#setup-environment">Setup Environment</a>
+                    <a class="navlink" href="#setup-environment">Setup Environment</a>
                 </li>
                 <li>
-                    <a href="#html_elements">Basic HTML Element</a>
+                    <a class="navlink" href="#html_elements">Basic HTML Element</a>
                 </li>
                 <li>
-                    <a href="#css_elements">Basic CSS Element</a>
+                    <a class="navlink" href="#css_elements">Basic CSS Element</a>
                 </li>
                 <li>
-                    <a href="#simple_case">Simple Case</a>
+                    <a class="navlink" href="#simple_case">Simple Case</a>
                 </li>
                 <li>
-                    <a href="#reference">Reference</a>
+                    <a class="navlink" href="#reference">Reference</a>
                 </li>
             </ul>
         </nav>
         <main id="main-doc">
-            <section id="introduction">
+            <section class="main-section" id="introduction">
                 <header>Introduction</header>
                 <article>
                     <p>HTML and CSS is a languages that been used for creating a website in front-end side (Client side).
@@ -64,14 +64,17 @@
                 </ul> <!-- use list to define the terms with format Terms : Description-->
                 <p>CSS Terms</p>
                 <ul>
-                    <li>Selector</li>
-                    <li>Property</li>
-                    <li>Value</li>
-                    <li>Declaration</li>
-                    <li>Class</li>
-                    <li>ID</li>
-                    <li></li>
-                    <li></li>
+                    <li>Selector = pattern that is used to select and style HTML elements on a webpage</li>
+                    <li>Property = an attribute of a CSS rule that defines the visual or behavior of the selected elements</li>
+                    <li>Value = specific settings assigned to CSS property</li>
+                    <li>Declaration = combination of a property and its associated value within a CSS Rule <br>
+                        example: <br><br>
+                        <code>selector { <br>
+                            &nbsp;&nbsp;property: value;<br>
+                        }</code>
+                    </li>
+                    <li>Class = a way to group and apply styles to multiple HTML elements, it is one of selector.</li>
+                    <li>ID = unique identifier for a specific HTML element on a webpage</li>                    
                 </ul>
             </section>
             <section class="main-section" id="setup_environment">
@@ -195,6 +198,11 @@
             </section>
             <section class="main-section" id="reference">
                 <header>Reference</header>
+                <article>
+                    <ul>
+                        <li>You can learn the detail about HTML and CSS on <a href="https://www.w3schools.com/html/default.asp">W3school</a></li>
+                    </ul>
+                </article>
             </section>
             
             
@@ -223,4 +231,5 @@
     element element dasat css
     
     simple case
+    -> disini gunakan code element untuk memberiklan contoh
     reference -->
