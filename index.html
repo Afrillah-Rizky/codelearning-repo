@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="HTML and CSS Intro Technical Documentation" />
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>HTML and CSS Intro Technical Documentation</header>
+            <ul>
+                <!-- Nav bar for each item-->
+                <!-- linked to each section article -->
+                <li>
+                    <a class="navlink" href="#introduction">Introduction</a>
+                </li>
+                <li>
+                    <a class="navlink" href="#terms">Terms</a>
+                </li>
+                <li>
+                    <a class="navlink" href="#setup-environment">Setup Environment</a>
+                </li>
+                <li>
+                    <a class="navlink" href="#html_elements">Basic HTML Element</a>
+                </li>
+                <li>
+                    <a class="navlink" href="#css_elements">Basic CSS Element</a>
+                </li>
+                <li>
+                    <a class="navlink" href="#simple_case">Simple Case</a>
+                </li>
+                <li>
+                    <a class="navlink" href="#reference">Reference</a>
+                </li>
+            </ul>
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header>Introduction</header>
+                <article>
+                    <p>HTML and CSS is a languages that been used for creating a website in front-end side (Client side).
+                        HTML stands for Hyper-text Markup Language, is it a used to give structure of your website. meanwhile CSS ore Cascading Style sheets is language that can be use to style the front-end of the website.
+                        Learning HTML and CSS is a fundamental skill for front-end developer to design the website, and make it to become interesting and intuitive for users to acces the website.
+                    </p> <!-- The description is written in this element-->
+                </article>
+            </section>
+            <section class="main-section" id="terms">
+                <header>Terms</header>
+                <p>Here is the terms that commonly used in HTML and CSS language</p>
+                <p>HTML terms</p>
+                <ul>
+                    <li>Element : A fundamental building block in HTML, defined by tags, such as p for paragraphs or h1 for header</li>
+                    <li>Tag : an HTML code that defines an element. it consist of an opening tag, content, and a closing tag. </li>
+                    <li>Attribute : extra information added to HTML elements to provide additional details or modify their behavior</li>
+                    <li>Attribute Value : the value assigned to an attribute.</li>
+                    <li>HTML Document : the complete structure of an HTML page, include DOCTYPE Declaration, head and body</li>
+                    <li>DOCTYPE Declaration : specifies the HTML version being used and must be declared at the begining of an HTML document</li>
+                    <li>HTML Head : containt meta-information about HTML document</li>
+                    <li>HTML Body : containt the content of the HTML document</li>
+                    <li>Tag Nesting : placing one HTML element inside another</li>
+                    <li>HTML Comment : a way to add Commentto the HTML code that won't displayed on the webpage.</li>
+                    <li></li>
+                </ul> <!-- use list to define the terms with format Terms : Description-->
+                <p>CSS Terms</p>
+                <ul>
+                    <li>Selector = pattern that is used to select and style HTML elements on a webpage</li>
+                    <li>Property = an attribute of a CSS rule that defines the visual or behavior of the selected elements</li>
+                    <li>Value = specific settings assigned to CSS property</li>
+                    <li>Declaration = combination of a property and its associated value within a CSS Rule <br>
+                        example: <br><br>
+                        <code>selector { <br>
+                            &nbsp;&nbsp;property: value;<br>
+                        }</code>
+                    </li>
+                    <li>Class = a way to group and apply styles to multiple HTML elements, it is one of selector.</li>
+                    <li>ID = unique identifier for a specific HTML element on a webpage</li>                    
+                </ul>
+            </section>
+            <section class="main-section" id="setup_environment">
+                <header>Setup Environment</header>
+                <p>What you need to start coding with HTML & CSS</p>
+                <!-- content: Text editor / Ide -->
+                <ul>
+                    <li>
+                        <p>Text Editor</p>
+                        <p>Choose a text editor for wrinting your HTML and CSS Code</p>
+                        <p>Example of text editor :</p>
+                        <ul>
+                            <li>Visual Studio Code : lightweight, free and open source text editor with a lot of feature to help for Web development</li>
+                            <li>Atom : a customizable and user-friendly text editor</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <p>Web Browser</p>
+                        <p>Have a modern web browser installed for testing and previewing your HTML and CSS. Common choices include Google Chrome, Mozilla Firefox, or Microsoft Edge.</p>
+                    </li>
+                    <li>
+                        <p>HTML and CSS File</p>
+                        <p>Create your HTML file (e.g., index.html) and CSS file (e.g., style.css) in your project folder.</p>
+                    </li>
+                    <li>
+                        <p>Additional : Live Server extention on VS Code</p>
+                        <p>If you use VS Code as an text editor, Live Server extention is a great tool to display your code in your selected browser</p>
+                    </li>
+                </ul>
+                
+            </section>
+            <section class="main-section" id="html_elements">
+                <header>Basic HTML Elements</header>
+                <p>Creating website is like creating a building, so HTML is a language to create a structure of your website</p>
+                <p>all html elements below written using tags "<>" </p>
+                <ul>
+                    <li>!DOCTYPE html = Declaration to specify the HTML Version</li>
+                    <li>html = root elements that wraps all contents on the page </li>
+                    <li>head = Containts metadata about HTML documents, such as title, charset, and linked stylesheet</li>
+                    <li>title = Sets the title of the HTML document (will be displayed in the browset tab)</li>
+                    <li>meta charset="UTF-8" = Declares that the character encoding of the HTML documents(Commonly use UTF-8)</li>
+                    <li>body = contains the content of the HTML document, include text, image links, etc</li>
+                    <li>h1 to h6 = heading elements for define different levels of heading from highest level to lowest</li>
+                    <li>p = paragraph element for text content</li>
+                    <li>a = anchor element for creating hyperlink</li>
+                    <li>etc =  you can learn any other element by visiting reference</li>
+                </ul>
+            </section>
+            <section class="main-section" id="css_elements">
+                <header>Basic CSS Elements</header>
+                <p>using same analogy in HTML, CSS is a language to style your website</p>
+                <p>Below is basic elements of css that oftenly used</p>
+                <ol>
+                    <li>Selector</li>
+                    <p>css selectors target HTML elements for styling</p>
+                    <ul>
+                        <li>'element' selector(e.g., 'p' for paragraph)</li>
+                        <li>.classselector(e.g., .container for elements with the class="container")</li>
+                        <li>#id selector (e.g., #header for an element with the id = )</li>
+                    </ul>
+                    <li>Color</li>
+                    <ul>
+                        <li>'Color' : Set text color</li>
+                        <li>'background-color': set the background color</li>
+                    </ul>
+                    <li>Typography</li>
+                    <ul>
+                        <li>'font-family' : Sets the font family</li>
+                        <li>'font-size' : Sets the font size</li>
+                        <li>'font-weight' : Sets the font weight(e.g., 'bold')</li>
+                    </ul>
+                    <li>Text</li>
+                    <ul>
+                        <li>'text-align' : Align text (e.g., 'left', 'center', 'right')</li>
+                    </ul>
+                    <li>Margins and Paddings</li>
+                    <ul>
+                        <li>'margin' : Sets the margin outside the element</li>
+                        <li>'Paddings' : Sets the Padding inside the element</li>
+                    </ul>
+                    <li>Border</li>
+                    <ul>
+                        <li>'border' : Sets the border properties(e.g., '1px solid #000')</li>
+                    </ul>
+                    <li>Width and Height</li>
+                    <ul>
+                        <li>'width' : Sets the width of an element</li>
+                        <li>'height' : Sets the height of an element</li>
+                    </ul>
+                    <li>Display</li>
+                    <ul>
+                        <li>'display' : Specifies how an element is displayed(e.g., 'block', 'inline', 'none'</li>
+                    </ul>
+                    <li>Positioning</li>
+                    <ul>
+                        <li>'position' : Sets the position method (e.g., 'relative', 'absolute', 'fixed')</li>
+                        <li>'top', 'right', 'bottom', 'left' : positions element</li>
+                    </ul>
+                    <li>Flexbox</li>
+                    <ul>
+                        <li>'display: flex' : Enables flexbox layout for the countainer</li>
+                        <li>'flex-direction' : Sets the direction of the flex container</li>
+                        <li>'justify-content' : Align items along the main axis</li>
+                        <li>'align-items' : Align items along the cross axis</li>
+                    </ul>
+                    <li>Grid</li>
+                    <ul>
+                        <li>'display: grid' : Enables grid layout for the container</li>
+                        <li>'grid-template-columns','grid-template-rows' : Defines the grid structures</li>
+                    </ul>
+                    <li>Background</li>
+                    <ul>
+                        <li>'background-image' : Sets the background image</li>
+                        <li>'background-size', 'background-postion' : Controls background image properties</li>
+                    </ul>
+                    
+                </ol>
+            </section>
+            <section class="main-section" id="simple_case">
+                <header>Simple Case</header>
+            </section>
+            <section class="main-section" id="reference">
+                <header>Reference</header>
+                <article>
+                    <ul>
+                        <li>You can learn the detail about HTML and CSS on <a href="https://www.w3schools.com/html/default.asp">W3school</a></li>
+                    </ul>
+                </article>
+            </section>
+            
+            
+        </main>
+
+    </body>
+
+
+    <!--Technical documentation project--
+    Idea : html and css introducntion
+     Content: 
+     Introduction
+          html, css
+            Apa itu html ?
+            apa itu css?
+    terms and techcnical terms
+        Element
+        Property
+        Style
+
+     Setup environment (tools apa saja yang dibutuhkan, )
+        Text editor
+            extention (Live Server )
+    Element-element dasar html
+
+    element element dasat css
+    
+    simple case
+    -> disini gunakan code element untuk memberiklan contoh
+    reference -->
